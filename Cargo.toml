@@ -1,0 +1,17 @@
+[package]
+name = "teensy3-wall"
+version = "0.1.0"
+authors = ["Patrick Brown <patrick.barry.brown@gmail.com>"]
+
+[dependencies.teensy3]
+git = "https://github.com/patches11/teensy3-rs.git"
+branch = "octo"
+features = ["teensy_3_6"]
+
+[profile.dev]
+panic = "abort"
+lto = true
+
+[profile.release]
+panic = "abort"
+lto = true
